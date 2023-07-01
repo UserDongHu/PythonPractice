@@ -17,7 +17,7 @@ print(dic.get('address','없음'))
 print(1 in dic)
 s1 = set([1,2,3]) #집합 s1 = {1,2,3}
 s1.add(4)
-s1.update([5,6,7])
+s1.update([5,6,7,8])
 s1.remove(7)
 print(s1, type(s1))
 l = [1,2,2,3,3]
