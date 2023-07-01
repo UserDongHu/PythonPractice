@@ -27,3 +27,4 @@ s2 = set([3,4,5])
 print(s1 & s2) #(s1.intersection(s2)) 교집합
 print(s1 | s2) #(s1.union(s2)) 합집합
 print(s1 - s2) #(s2.difference(s1)) 차집합
+#pythontutor.com/live.html << 객체에 값 들어가는거 눈으로 확인가능
