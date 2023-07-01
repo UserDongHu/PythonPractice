@@ -21,5 +21,5 @@ while a < 10:
         continue
     print(a)
 
-for i in range(1,5):
+for i in range(1,6):
     print("i는 %s입니다." %i)
