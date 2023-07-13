@@ -27,8 +27,13 @@ driver = webdriver.Chrome(service=service, options=chrome_options)
 #https://0433.tistory.com/41 << 참고할 블로그
 
 # 1.네비게이션 관련 툴
-driver.get("https://www.naver.com")
-time.sleep(3)
+driver.get("https://twitter.com/login")
+#driver.execute_script('window.open("https://twitter.com/login");')
+WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'input')))
+id = driver.find_element(By.TAG_NAME, 'input')
+
+print(id)
+#driver.switch_to.window(driver.window_handles[0])
 # driver.get("https://google.com")
 # time.sleep(3)
 
@@ -59,12 +64,12 @@ time.sleep(3)
 
 # 3. Driver Wait
 # 10초까지는 기다리겠다 selector가 찾아질때까지.
-selector = "#shortcutArea > ul > li:nth-child(2) > a"
-try:
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, selector)))
-except:
-    print("예외발생")
-print("다음 코드 실행")
+# selector = "#shortcutArea > ul > li:nth-child(2) > a"
+# try:
+#     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, selector)))
+# except:
+#     print("예외발생")
+# print("다음 코드 실행")
 
 #selector = "#shortcutArea > ul" #요소 찾아서 가져오기
 # group_navigation = driver.find_element(By.CSS_SELECTOR, selector) #찾아온 요소 가져와서 담기
