@@ -14,7 +14,8 @@ chrome_options.add_experimental_option("detach", True)
 chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
 # 크롬 드라이버 최신 버전 설정
-service = Service(executable_path=ChromeDriverManager().install())
+service = Service()
+#service = Service(executable_path=ChromeDriverManager().install())
 
 
 
