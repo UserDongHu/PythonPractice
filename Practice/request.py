@@ -1,5 +1,6 @@
 import requests
 
+# 동물등록증 조회
 url = 'https://www.animal.go.kr/front/awtis/record/recordConfirmDtl.do'
 
 owner_name = ""
